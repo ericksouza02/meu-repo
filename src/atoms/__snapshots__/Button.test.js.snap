@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with NaN color 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-beyTiQ sc-guDMob jEgoro gxzahC"
+    color="primary"
+    type="button"
+    variant="outlined"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with NaN color 2`] = `
+<DocumentFragment>
+  <button
+    class="sc-beyTiQ sc-dmyDmy jEgoro gmNeii"
+    color="primary"
+    type="button"
+    variant="link"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with NaN color 3`] = `
+<DocumentFragment>
+  <button
+    class="sc-beyTiQ sc-guDMob mZbLo jHsQLY"
+    color="danger"
+    type="button"
+    variant="outlined"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with NaN color 4`] = `
+<DocumentFragment>
+  <button
+    class="sc-beyTiQ sc-dmyDmy mZbLo laZwXI"
+    color="danger"
+    type="button"
+    variant="link"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with NaN color 5`] = `
+<DocumentFragment>
+  <button
+    class="sc-beyTiQ sc-guDMob gMmSPo mGTez"
+    color="default"
+    type="button"
+    variant="outlined"
+  />
+</DocumentFragment>
+`;
+
+exports[`renders with NaN color 6`] = `
+<DocumentFragment>
+  <button
+    class="sc-beyTiQ sc-dmyDmy gMmSPo iNlXZn"
+    color="default"
+    type="button"
+    variant="link"
+  />
+</DocumentFragment>
+`;
