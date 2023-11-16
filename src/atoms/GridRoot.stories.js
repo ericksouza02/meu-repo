@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GridRoot from "./GridRoot";
-
+import ThemeProvider from "styled-components";
 export default {
     title:"Components/Atoms/GridRoot",
     component: GridRoot
@@ -13,6 +13,7 @@ const Box = styled.div`
 `
 
 export const usage = () => (
+    <ThemeProvider>
     <GridRoot sm={3} md={3} lg={4} xl={5}>
         <Box></Box>
         <Box></Box>
@@ -23,4 +24,5 @@ export const usage = () => (
         <Box></Box>
         <Box></Box>
     </GridRoot>
+    </ThemeProvider>
 )

@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import AccordionGroup from "./AccordionGroup";
-
+import ThemeProvider from "../styles/ThemeProvider";
 export default {
     title:"Components/Atoms/Accordion",
     component: Accordion
@@ -10,7 +10,7 @@ export default {
  
 
 export const usage = () => (
-    <>
+    <ThemeProvider>
     <Accordion title='Como eu renovo minha CNH?'>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit obcaecati perspiciatis aut iste ducimus qui. Officia, quos provident. Impedit expedita nesciunt natus eius sapiente fugiat?
@@ -28,11 +28,12 @@ export const usage = () => (
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit obcaecati perspiciatis aut iste ducimus qui. Officia, quos provident. Impedit expedita nesciunt natus eius sapiente fugiat?
         </p>
     </Accordion>
-    </>
+    </ThemeProvider>
 )
 
 
 export const withGroup = () => (
+    <ThemeProvider>
     <AccordionGroup>
     <Accordion title='Como eu renovo minha CNH?'>
         <p>
@@ -52,4 +53,5 @@ export const withGroup = () => (
         </p>
     </Accordion>
     </AccordionGroup>
+    </ThemeProvider>
 )

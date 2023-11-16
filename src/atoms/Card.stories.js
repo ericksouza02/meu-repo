@@ -6,6 +6,7 @@ import CardImage from '../assets/car-img.jpg';
 
 import Button from './Button';
 import Heading from "./Heading";
+import ThemeProvider from "../styles/ThemeProvider";
 export default {
     title:"Components/Atoms/Card",
     component: Card, 
@@ -14,6 +15,7 @@ export default {
 
 
 export const usage = () => (
+    <ThemeProvider>
     <Section inverse>
         <Card>
             <CardBody>
@@ -30,9 +32,11 @@ export const usage = () => (
         </Card>
         <Button color='primary' variant='outlined'>Lista Completa de Serviços</Button> 
     </Section>
+    </ThemeProvider>
 )
 
 export const withMedia = () => (
+    <ThemeProvider>
 
     <Section inverse>
         <Card>
@@ -51,4 +55,5 @@ export const withMedia = () => (
         </Card> 
         <Button color='primary' variant='outlined'>Lista Completa de Serviços</Button>
     </Section>
+    </ThemeProvider>
 )

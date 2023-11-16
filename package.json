@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "chromatic": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
@@ -23,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_801812bbb93230d"
   },
   "eslintConfig": {
     "extends": [
@@ -80,5 +82,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "prop-types": "^15.8.1",
     "webpack": "^5.88.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "react-atescola@0.1.0"
 }
