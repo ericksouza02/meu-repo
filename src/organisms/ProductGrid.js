@@ -23,7 +23,8 @@ const ProductGrid = ({products}) => {
 
         <GridRoot md={3}>
             {filteredProducts.map((product)=> (
-                <Card key={product.id}>
+                <div key={product.id}>
+                <Card>
                     <CardMedia image={product.image} />
                     <CardBody>
                         <Heading>
@@ -35,6 +36,7 @@ const ProductGrid = ({products}) => {
                         </Button>
                     </CardBody>
                 </Card>
+                </div>
             ))}
         </GridRoot>
         {!showProducts &&(

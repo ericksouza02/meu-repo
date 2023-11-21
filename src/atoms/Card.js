@@ -48,6 +48,7 @@ CardMedia.propTypes = {
 const StyledCard = styled.div`
     padding: 0;
     background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 4px;
 `
 
