@@ -3,7 +3,7 @@
 exports[`match snapshot with no params 1`] = `
 <DocumentFragment>
   <div
-    class="sc-beyTiQ lbZvPe"
+    class="sc-bdnyFh hlFGce"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`match snapshot with no params 1`] = `
 exports[`match snapshot with params 1`] = `
 <DocumentFragment>
   <div
-    class="sc-beyTiQ kJUkUC"
+    class="sc-bdnyFh dcNyyW"
     lg="4"
     md="3"
     sm="2"
