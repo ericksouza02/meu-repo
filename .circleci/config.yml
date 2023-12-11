@@ -1,0 +1,19 @@
+version: 2.1
+
+orbs: 
+  node: circleci/node@5.1.0
+
+jobs: 
+  setup:
+    docker: 
+      - image: circleci/node:20.10.0-browsers   
+    steps: 
+      - checkout 
+      -node/install: 
+        install-npm: true
+      - run: node --version
+      - run: npm --version
+
+workflow:
+  ci: 
+    - setup
