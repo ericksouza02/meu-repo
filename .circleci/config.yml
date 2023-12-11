@@ -8,7 +8,6 @@ jobs:
     docker: 
       - image: circleci/node:20.10.0-browsers   
     steps: 
-      - checkout 
       -node/install: 
         install-npm: true
       - run: node --version
