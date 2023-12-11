@@ -10,7 +10,7 @@ jobs:
     steps: 
       - checkout
       - node/install: 
-        install-npm: true
+          install-npm: true
       - run: node --version
       - run: npm --version
 
