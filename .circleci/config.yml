@@ -6,7 +6,7 @@ orbs:
 jobs: 
   setup:
     docker: 
-      - image: circleci/node:20.10.0-browsers   
+      - image: circleci/node:16.15.0-browsers   
     steps: 
       - checkout
       - node/install: 
