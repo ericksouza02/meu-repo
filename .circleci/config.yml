@@ -15,5 +15,5 @@ jobs:
       - run: npm --version
 
 workflow:
-  ci: 
+  jobs: 
     - setup
