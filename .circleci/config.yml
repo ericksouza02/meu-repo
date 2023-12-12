@@ -6,9 +6,9 @@ orbs:
 jobs: 
   setup:
     docker: 
-    
       - image: circleci/node:4.0.2
     steps: 
+      - checkout
       - node/install: 
         install-npm: true
       - run: node --version
