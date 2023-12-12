@@ -1,12 +1,12 @@
 version: 2.1
 
 orbs: 
-  node: circleci/node@5.1.0
+  node: circleci/node@4.0.0
 
 jobs: 
   setup:
     docker: 
-      - image: circleci/node:16.15.0-browsers   
+      - image: circleci/node:12.18.3 -browsers   
     steps: 
       - checkout
       - node/install: 
@@ -17,4 +17,3 @@ jobs:
 workflow:
   ci: 
     - setup
-    
