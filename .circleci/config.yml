@@ -1,19 +1,24 @@
 version: 2.1
 
-orbs: 
+orbs:
   node: circleci/node@20.10.0
 
-jobs: 
+jobs:
   setup:
-    docker: 
+    docker:
       - image: circleci/node:20.10.0
-    steps: 
+    steps:
       - checkout
-      - node/install: 
-        install-npm: true
+      - run:
+          name: Install Node.js and NPM
+          command: |
+            curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+            sudo apt-get install -y nodejs
       - run: node --version
       - run: npm --version
 
 workflows:
-  jobs: 
-    - setup
+  version: 2
+  build-and-test:
+    jobs:
+      - setup
