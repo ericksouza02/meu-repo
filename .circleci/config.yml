@@ -17,7 +17,8 @@ jobs:
       - run: node --version
       - run: npm --version
       - node/install-packages:
-        pkg-manager: npm
+          pkg-manager: npm
+      - run: npm run lint
 workflows:
   version: 2
   build-and-test:
