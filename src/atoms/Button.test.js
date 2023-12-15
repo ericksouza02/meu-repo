@@ -1,11 +1,12 @@
 import React from "react";
-import {screen,fireEvent } from '@testing-library/react'
+import {screen,fireEvent } from '@testing-library/react';
+import { render } from "@testing-library/react";
 import ThemeProvider from "../styles/ThemeProvider";
 
 import Button from "./Button"
 
 test('element children in the Button', () => {
-    const { getByText } = screen.render(
+    const { getByText } = render(
     <ThemeProvider>
         <Button>Clique Aqui</Button>
     </ThemeProvider>
@@ -17,7 +18,7 @@ test('event click on Button', () => {
 
     const handleCLick = jest.fn()
 
-    const {getByRole} = screen.render(
+    const {getByRole} = render(
     <ThemeProvider>
         <Button onClick={handleCLick}/>
     </ThemeProvider>
@@ -40,7 +41,7 @@ test.each([
    ['default', 'link']
 ])('renders with %i color', (color, variant) => {
 
-    const { asFragment } = screen.render(
+    const { asFragment } = render(
     <ThemeProvider>
         <Button color={color} variant={variant}/>
     </ThemeProvider>
