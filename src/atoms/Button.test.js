@@ -1,29 +1,29 @@
 import React from "react";
-import { render, fireEvent } from '@testing-library/react'
+import {screen,fireEvent } from '@testing-library/react'
 import ThemeProvider from "../styles/ThemeProvider";
 
 import Button from "./Button"
 
 test('element children in the Button', () => {
-    const { getByText } = render(
+    const { getByText } = screen.render(
     <ThemeProvider>
         <Button>Clique Aqui</Button>
     </ThemeProvider>
 )
-    expect(getByText('Clique Aqui')).toBeInTheDocument()
+    expect(screen.getByText('Clique Aqui')).toBeInTheDocument()
 });
 
 test('event click on Button', () => {
 
     const handleCLick = jest.fn()
 
-    const {getByRole} = render(
+    const {getByRole} = screen.render(
     <ThemeProvider>
         <Button onClick={handleCLick}/>
     </ThemeProvider>
     )
 
-    fireEvent.click(getByRole('button')) // paramentros fireEvent.click(elemento, evento)
+    fireEvent.click(screen.getByRole('button')) // paramentros fireEvent.click(elemento, evento)
 
     expect(handleCLick).toBeCalled()
 });
@@ -40,7 +40,7 @@ test.each([
    ['default', 'link']
 ])('renders with %i color', (color, variant) => {
 
-    const { asFragment } = render(
+    const { asFragment } = screen.render(
     <ThemeProvider>
         <Button color={color} variant={variant}/>
     </ThemeProvider>

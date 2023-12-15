@@ -7,7 +7,7 @@ export default {
     component: Home
 }
 
-export const usage = () => (
+export const Usage = () => (
     <ThemeProvider>
         <Home />
     </ThemeProvider>

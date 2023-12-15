@@ -1,4 +1,3 @@
-import {render} from '@testing-library/react';
 import {breakAt, BreakPointSizes} from './BreakPointSize';
 
 test.each([
