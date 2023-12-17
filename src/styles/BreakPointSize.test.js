@@ -1,5 +1,5 @@
 import {breakAt, BreakPointSizes} from './BreakPointSize';
-
+import '@testing-library/jest-dom';
 test.each([
     [BreakPointSizes.sm],
     [BreakPointSizes.md],

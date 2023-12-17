@@ -1,6 +1,6 @@
 import React from "react";
 import {render} from '@testing-library/react';
-
+import '@testing-library/jest-dom';
 import GridRoot from "./GridRoot"
 
 test('match snapshot with no params', () => {
