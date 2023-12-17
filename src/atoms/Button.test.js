@@ -1,7 +1,8 @@
 import React from "react";
-import { render, fireEvent } from '@testing-library/react'
+import {screen,fireEvent } from '@testing-library/react';
+import { render } from "@testing-library/react";
 import ThemeProvider from "../styles/ThemeProvider";
-
+import '@testing-library/jest-dom';
 import Button from "./Button"
 
 test('element children in the Button', () => {
@@ -10,7 +11,7 @@ test('element children in the Button', () => {
         <Button>Clique Aqui</Button>
     </ThemeProvider>
 )
-    expect(getByText('Clique Aqui')).toBeInTheDocument()
+    expect(screen.getByText('Clique Aqui')).toBeInTheDocument()
 });
 
 test('event click on Button', () => {
@@ -23,7 +24,7 @@ test('event click on Button', () => {
     </ThemeProvider>
     )
 
-    fireEvent.click(getByRole('button')) // paramentros fireEvent.click(elemento, evento)
+    fireEvent.click(screen.getByRole('button')) // paramentros fireEvent.click(elemento, evento)
 
     expect(handleCLick).toBeCalled()
 });

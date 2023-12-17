@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Hero from '../molecules/Hero'
 import Heading from '../atoms/Heading';
 import Button from '../atoms/Button';
