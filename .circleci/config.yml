@@ -19,6 +19,10 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run: npm run lint
+      - run: npm run cover
+      - codecov/upload:
+        file: coverage/*.json
+      - run: npm run chromatic --project-token=${CHROMATIC_TOKEN}
 
   versioning:
     executor:
