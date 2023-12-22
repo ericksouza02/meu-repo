@@ -2,7 +2,6 @@ version: 2.1
 
 orbs:
   node: circleci/node@3.0.0
-  codecov: codecov/codecov@3.0.0
 
 jobs:
   setup:
@@ -21,9 +20,7 @@ jobs:
           pkg-manager: npm
       - run: npm run lint
       - run: npm run cover
-      - codecov/upload:
-        file: coverage/*.json
-      - run: npm run chromatic --project-token=${CHROMATIC_TOKEN}
+      
 
   versioning:
     executor:
