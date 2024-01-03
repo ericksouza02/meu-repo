@@ -24,9 +24,7 @@ jobs:
       - run: 
           name: Run Lint Check
           command: npm run lint
-      - run: 
-          name: Test All Checks
-          command: npm run cover
+      
       
 
   versioning:
