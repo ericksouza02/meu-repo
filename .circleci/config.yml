@@ -14,12 +14,19 @@ jobs:
           command: |
             curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
             sudo apt-get install -y nodejs
-      - run: node --version
-      - run: npm --version
+      - run: 
+          name: Show Node and NPM Version
+          command: |
+            node --version
+            npm --version
       - node/install-packages:
           pkg-manager: npm
-      - run: npm run lint
-      - run: npm run cover
+      - run: 
+          name: Run Lint Check
+          command: npm run lint
+      - run: 
+          name: Test All Checks
+          command: npm run cover
       
 
   versioning:
