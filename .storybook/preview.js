@@ -60,10 +60,10 @@ const preview = {
       <>
           <ThemeProvider 
             theme={select("Theme", ThemeNames, ThemeNames.light)}>
-          <GlobalStyle/>        
-            {storyFn()}
+            <GlobalStyle/>        
+              {storyFn()}
+            <GlobalStyle/>
           </ThemeProvider>
-        <GlobalStyle/>
         {storyFn()}
       </>
     ),
