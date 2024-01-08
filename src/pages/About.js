@@ -5,11 +5,16 @@ import GridRoot from '../atoms/GridRoot';
 import styled from "styled-components";
 import CarImage from '../assets/car-img.jpg'
 import Section from '../molecules/Section'
-
+import AboutImage from '../draws/about.svg';
+import Footer from '../organisms/Footer'
 const Article = styled.div`
     li, p {
         color: #000;
     }
+`
+
+const Image = styled.img`
+    width: 100%
 `
 
 const About = () => (
@@ -19,7 +24,6 @@ const About = () => (
         </Hero>
         <Section>
         <GridRoot md={2}>
-            <Article>
                 <div>
                     <p>lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor</p>
                     <p>lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor</p>
@@ -33,12 +37,35 @@ const About = () => (
                     </ul>
                 </div>
                 <div>
-                    <p>lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor</p>
+                    <p>lorem ispur dolor lorem .ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor lorem ispur dolor</p>
+                    <center>
 
+                        <Image
+                        src={AboutImage} 
+                        alt="Prédio com Carros"
+                        />
+                    </center>
                 </div>
-            </Article>
         </GridRoot>
         </Section>
+        <Section inverse>
+            <GridRoot md={2}>
+                <div>
+                    <h1>Missão</h1>
+                    <p>lorem ispur dolor emate odi aieu laou lanyyu odiau lorem ispudr dolor ikaj kjd iak mnaoi uida i ijiduai kjkd lorem ispudr dolor ikaj kjd iak mnaoi uida i ijiduai kjkd</p>
+                </div>
+                <div>
+                    <h1>Visão</h1>
+                    <p>lorem ispudr dolor ikaj kjd iak mnaoi uida i ijiduai kjkd lorem ispudr dolor ikaj kjd iak mnaoi uida i ijiduai kjkd lorem ispudr dolor ikaj kjd iak mnaoi uida i ijiduai kjkd</p>
+                </div>
+            </GridRoot>
+        </Section>
+        <Section>
+            <Heading>
+                <h2>Conheça nossos professores</h2>
+            </Heading>
+        </Section>
+        <Footer />
     </>
 )
 

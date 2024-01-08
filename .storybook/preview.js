@@ -63,7 +63,6 @@ const preview = {
             <GlobalStyle/>        
               {storyFn()}
             <GlobalStyle/>
-            {storyFn()}
           </ThemeProvider>
       </>
     ),

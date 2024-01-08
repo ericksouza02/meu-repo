@@ -10,7 +10,7 @@ grid-template-columns: repeat(${props => props[size]}, 1fr);
 ` 
 
 const GridRoot = styled.div`
- 
+    color: #000;
     display: grid;
     grid-column-gap: 16px;
     grid-row-gap: 16px;

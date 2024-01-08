@@ -5,8 +5,4 @@ export default {
     title:"Components/Organisms/Footer",
     component: Footer
 }
-export const usage = () => (
-    <ThemeProvider>
-    <Footer/>
-    </ThemeProvider>
-)
+export const usage = () => <Footer/>
