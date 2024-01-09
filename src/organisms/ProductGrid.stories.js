@@ -8,7 +8,7 @@ export default {
 }
 
 export const usage = () => (
-    <ThemeProvider>
+ 
 
     <ProductGrid products={[
         {   id: 1, 
@@ -47,5 +47,5 @@ export const usage = () => (
         image: CardImage
     },
 ]}/>
-</ThemeProvider>
+
 )

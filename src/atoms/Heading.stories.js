@@ -15,7 +15,6 @@ const Root = styled.div`
 `
 
 export const usage = () => (
-    <ThemeProvider>
     <Root>
         <Heading><h1>{text('Título 1', 'Título 1')} </h1></Heading>
         <Heading><h2>{text('Título 2', 'Título 2')} </h2></Heading>
@@ -24,5 +23,4 @@ export const usage = () => (
         <Heading><h5>{text('Título 5', 'Título 5')} </h5></Heading>
         <Heading><h6>{text('Título 6', 'Título 6')} </h6></Heading>
     </Root>
-    </ThemeProvider>
 );

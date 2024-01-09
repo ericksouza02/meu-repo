@@ -12,16 +12,16 @@ export default {
 }
 
 export const usage = () => (
-    <ThemeProvider>
+    
     <Grid icon={<FaCar/>} title={text('Title', 'Título')}>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, obcaecati?</p>
     </Grid>
-    </ThemeProvider>
+   
 )
 
 
 export const withGrid = () => (
-    <ThemeProvider>
+    
 
     <GridRoot sm={3} md={3} lg={4} xl={5}>
        <Grid icon={<FaCar/>} title='Habilitação Mais Rápida'>
@@ -37,5 +37,5 @@ export const withGrid = () => (
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, obcaecati?</p>
         </Grid>
     </GridRoot>
-    </ThemeProvider>
+   
 )
