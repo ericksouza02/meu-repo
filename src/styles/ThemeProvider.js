@@ -7,22 +7,26 @@ export const ThemeNames = {
 
 
 const light = { 
-        colors:{
+        
+    colors:{        
             primary: {
                 main: '#F3D500',
                 dark: '#E8BB00',
                 light: '#FDED00',
                 text: '#212121'
             },
+
             danger: {
                 main: '#E80700',
                 dark: '#D80300',
                 light: '#F31F00',
                 text: '#212121'
             },
+
             default: {
                 primary: '#212121'
-            }
+            },
+            border: "rgba(0 ,0 ,0 ,0.125)"
         }
     }
 
