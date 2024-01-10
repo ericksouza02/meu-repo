@@ -31,16 +31,20 @@ const StyledMedia = styled.div`
     background-size: cover;
     min-height: 270px;
 `
-export const CardMedia = ({image}) => (
-    <StyledMedia image={image}/>
+export const CardMedia = ({image, children}) => (
+    <StyledMedia image={image}>
+        {children}
+    </StyledMedia>
 )
 
 CardMedia.defaultProps = {
     image: undefined,
+    children: undefined,
 }   
 
 CardMedia.propTypes = {
     image: PropTypes.node,
+    children: PropTypes.node
 }
 //#endregion
 
@@ -51,7 +55,6 @@ const StyledMediaDescription = styled.div`
     color: #fff;
     align-self: flex-end;
     flex: 1;
-
 
     h1,
     h2,

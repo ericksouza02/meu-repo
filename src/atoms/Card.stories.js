@@ -2,7 +2,7 @@ import React from "react";
 import Card,{CardBody, CardMedia, CardMediaDescription} from "./Card";
 import Section from '../molecules/Section';
 import CardImage from '../assets/car-img.jpg';
-
+import CardPlaceHolder from '../assets/card-placeholder.jpg'
 
 import Button from './Button';
 import Heading from "./Heading";
@@ -63,13 +63,11 @@ export const withMedia = () => (
 export const onlyMedia = () => (
     <Section>
         <Card>
-            <CardMedia image={CardImage}>
+            <CardMedia image={CardPlaceHolder}>
                 <CardMediaDescription>
-                    Ola eu sou um teste
                     <h4>Descrição da imagem</h4>
                 </CardMediaDescription>
             </CardMedia>
         </Card>
     </Section>
-
 )
