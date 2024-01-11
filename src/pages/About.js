@@ -14,6 +14,7 @@ const Image = styled.img`
     height: auto;
     max-width: 380px;
     color: ${props => props.theme.colors.primary.main}
+    max-height: 200px;
 `
 
 const instructors = [
