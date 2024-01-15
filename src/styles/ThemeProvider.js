@@ -26,7 +26,7 @@ const light = {
             default: {
                 primary: '#212121'
             },
-            border: "rgba(0 ,0 ,0 ,0.125)"
+            border: "rgba(0, 0, 0, 0.125)"
         }
     }
 
