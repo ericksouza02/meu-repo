@@ -19,10 +19,8 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/sobre" element={<About />}/>
           </Routes>
+          <Home/>
         </Router>
-
-        
-        <Home/>
       </ThemeProvider>
     </Root>
   );

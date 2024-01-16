@@ -9,6 +9,7 @@ import AboutImage from '../draws/about.svg';
 import Footer from '../organisms/Footer'
 import AvatarImage from '../assets/car-img.jpg'
 import Card,{CardMedia, CardMediaDescription} from '../atoms/Card'
+import {Link} from 'react-router-dom';
 const Image = styled.img`
     width: 100%;
     height: auto;
@@ -26,7 +27,6 @@ const instructors = [
 
 const About = () => (
     <>
-        <a href="/">Ir para a home</a>
         <Hero image={CarImage}>
             <Heading><h1>Auto Escola Nardini</h1></Heading>
         </Hero>

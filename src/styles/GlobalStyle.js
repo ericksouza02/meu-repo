@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    a, button {
+        font-family: 'Poppins', sans-serif;
+    }
+
     *, *::before, *:after {
         box-sizing: inherit;
     }

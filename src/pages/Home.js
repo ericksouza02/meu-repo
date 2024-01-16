@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Hero from '../molecules/Hero'
 import Heading from '../atoms/Heading';
 import Button from '../atoms/Button';
@@ -12,7 +13,6 @@ import CardImage from '../assets/car-img.jpg';
 import AboutImage from '../assets/car-img.jpg'
 import ProductGrid from "../organisms/ProductGrid";
 import AccordionGroup from "../atoms/AccordionGroup";
-import { Link } from 'react-router-dom';
 
 const products = [
     {id: 1, title: "1 Habilitação Carro e Moto", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
@@ -24,9 +24,6 @@ const products = [
 
 const Home = () => (
  <>
-    <Link to="/sobre">
-        Ir para o Sobre
-    </Link>
     <Hero image={CardImage}>
         <Heading>
             <h1>
@@ -71,7 +68,7 @@ const Home = () => (
                 </Heading>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque enim soluta dolorum consectetur. Delectus, qui deserunt. Explicabo, laborum quae.</p>
                 <div>
-                    <Button color='primary'>Saiba Mais</Button>
+                    <Button as={Link} to='/sobre' color='primary'>Saiba Mais</Button>
                 </div>
             </div>
             <div>
