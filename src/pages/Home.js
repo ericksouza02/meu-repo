@@ -12,6 +12,7 @@ import CardImage from '../assets/car-img.jpg';
 import AboutImage from '../assets/car-img.jpg'
 import ProductGrid from "../organisms/ProductGrid";
 import AccordionGroup from "../atoms/AccordionGroup";
+import { Link } from 'react-router-dom';
 
 const products = [
     {id: 1, title: "1 Habilitação Carro e Moto", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
@@ -23,6 +24,9 @@ const products = [
 
 const Home = () => (
  <>
+    <Link to="/sobre">
+        Ir para o Sobre
+    </Link>
     <Hero image={CardImage}>
         <Heading>
             <h1>

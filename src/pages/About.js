@@ -26,6 +26,7 @@ const instructors = [
 
 const About = () => (
     <>
+        <a href="/">Ir para a home</a>
         <Hero image={CarImage}>
             <Heading><h1>Auto Escola Nardini</h1></Heading>
         </Hero>
