@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Hero from '../molecules/Hero'
 import Heading from '../atoms/Heading';
 import Button from '../atoms/Button';
@@ -67,7 +68,7 @@ const Home = () => (
                 </Heading>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque enim soluta dolorum consectetur. Delectus, qui deserunt. Explicabo, laborum quae.</p>
                 <div>
-                    <Button color='primary'>Saiba Mais</Button>
+                    <Button as={Link} to='/sobre' color='primary'>Saiba Mais</Button>
                 </div>
             </div>
             <div>

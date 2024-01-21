@@ -10,7 +10,7 @@ export default {
 }
 
 export const usage = () => (
-    <ThemeProvider>
+
     <Hero image={CardImage}>
         <ul>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ipsam!</li>
@@ -19,5 +19,5 @@ export const usage = () => (
         </ul>
         <Button color='primary' variant='outlined'>Matricule-se Agora</Button>
     </Hero>
-    </ThemeProvider>
+
 )

@@ -1,6 +1,8 @@
 import {select} from "@storybook/addon-knobs"
 import GlobalStyle from '../src/styles/GlobalStyle';
 import ThemeProvider, {ThemeNames} from '../src/styles/ThemeProvider';
+import { MemoryRouter as Router } from "react-router-dom";
+
 /** @type { import('@storybook/react').Preview } */
 
 const viewports = {
@@ -57,15 +59,14 @@ const preview = {
   },
   decorators: [
     (storyFn) => (
-      <>
+      <Router>
           <ThemeProvider 
             theme={select("Theme", ThemeNames, ThemeNames.light)}>
-          <GlobalStyle/>        
-            {storyFn()}
+            <GlobalStyle/>        
+              {storyFn()}
+            <GlobalStyle/>
           </ThemeProvider>
-        <GlobalStyle/>
-        {storyFn()}
-      </>
+      </Router>
     ),
   ],
 };

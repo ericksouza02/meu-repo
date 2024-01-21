@@ -1,8 +1,8 @@
 import React from "react";
-import Card,{CardBody, CardMedia} from "./Card";
+import Card,{CardBody, CardMedia, CardMediaDescription} from "./Card";
 import Section from '../molecules/Section';
 import CardImage from '../assets/car-img.jpg';
-
+import CardPlaceHolder from '../assets/card-placeholder.jpg'
 
 import Button from './Button';
 import Heading from "./Heading";
@@ -10,12 +10,11 @@ import ThemeProvider from "../styles/ThemeProvider";
 export default {
     title:"Components/Atoms/Card",
     component: Card, 
-    subcomponents: {CardBody, CardMedia}
+    subcomponents: {CardBody, CardMedia, CardMediaDescription}
 }
 
 
 export const usage = () => (
-    <ThemeProvider>
     <Section inverse>
         <Card>
             <CardBody>
@@ -30,30 +29,45 @@ export const usage = () => (
                 </Button>               
             </CardBody>
         </Card>
-        <Button color='primary' variant='outlined'>Lista Completa de Serviços</Button> 
+      
     </Section>
-    </ThemeProvider>
 )
 
 export const withMedia = () => (
-    <ThemeProvider>
-
     <Section inverse>
         <Card>
-            <CardMedia image={CardImage}/>
+            <CardMedia image={CardImage}>
+                <CardMediaDescription>
+                    <h4>Descrição da Imagem</h4>
+                </CardMediaDescription>
+            </CardMedia>
             <CardBody>
                 <Heading>
                     <h6>Título</h6>
                 </Heading>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, harum.</p>
+                <Button 
+                    color='primary' 
+                    variant='link'
+                    
+                    >
+                        Saiba Mais
+                    
+                </Button>  
             </CardBody>
-            <Button 
-                color='primary' 
-                variant='link'>
-                    Saiba Mais
-            </Button>  
         </Card> 
-        <Button color='primary' variant='outlined'>Lista Completa de Serviços</Button>
+        
     </Section>
-    </ThemeProvider>
+)
+
+export const onlyMedia = () => (
+    <Section>
+        <Card>
+            <CardMedia image={CardPlaceHolder}>
+                <CardMediaDescription>
+                    <h4>Descrição da imagem</h4>
+                </CardMediaDescription>
+            </CardMedia>
+        </Card>
+    </Section>
 )

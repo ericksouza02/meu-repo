@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./Home";
-import ThemeProvider from "../styles/ThemeProvider";
 
 export default {
     title:"Components/Pages/Home",
@@ -8,7 +7,5 @@ export default {
 }
 
 export const Usage = () => (
-    <ThemeProvider>
         <Home />
-    </ThemeProvider>
 )

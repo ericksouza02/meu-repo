@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+
 import Button from '../atoms/Button';
 import Heading from "../atoms/Heading";
-import Card,{CardBody, CardMedia} from "../atoms/Card";
+import Card, {CardBody, CardMedia} from "../atoms/Card";
 import GridRoot from "../atoms/GridRoot";
-import { useState } from "react";
+
 
 const ToolBar = styled.div`
     margin-top: 20px;
@@ -13,11 +16,10 @@ const ToolBar = styled.div`
 `
 
 const ProductGrid = ({products}) => {
-    
+
     const [showProducts, setShowProducts] = useState(false)
 
     const filteredProducts = showProducts ? products : products.slice(0,3);
-
     return(
     <>
 
@@ -31,7 +33,7 @@ const ProductGrid = ({products}) => {
                             <h6>{product.title}</h6>
                         </Heading>
                         <p>{product.summary}</p>
-                        <Button color='primary' variant='link'>
+                        <Button color='primary' variant='link' as={Link} to='/serviços'>
                             Saiba Mais
                         </Button>
                     </CardBody>
