@@ -1,4 +1,8 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+import AvatarImage from '../assets/car-img.jpg';
+import {useScrollToTop} from '../hooks/scroll'
+
 import Hero from "../molecules/Hero"
 import Heading from "../atoms/Heading";
 import GridRoot from '../atoms/GridRoot';
@@ -6,10 +10,10 @@ import styled from "styled-components";
 import CarImage from '../assets/car-img.jpg'
 import Section from '../molecules/Section'
 import AboutImage from '../draws/about.svg';
-import Footer from '../organisms/Footer'
-import AvatarImage from '../assets/car-img.jpg'
+import Footer from '../organisms/Footer';
+import BreadCrumb from '../atoms/BreadCrumbge';
 import Card,{CardMedia, CardMediaDescription} from '../atoms/Card'
-import {Link} from 'react-router-dom';
+
 const Image = styled.img`
     width: 100%;
     height: auto;
@@ -25,10 +29,17 @@ const instructors = [
     { id: 4, name: 'Spider Man', avatar: AvatarImage},
 ]
 
-const About = () => (
+const About = () => {
+    
+   useScrollToTop();
+
+    return(
     <>
         <Hero image={CarImage}>
             <Heading><h1>Auto Escola Nardini</h1></Heading>
+            <BreadCrumb items={[
+                {label: "Início", link: "/"}, {label: "Sobre"}
+            ]}/>
         </Hero>
         <Section>
         <GridRoot md={2}>
@@ -88,7 +99,8 @@ const About = () => (
         </Section>
         <Footer />
     </>
-)
+    )
+}
 
 
 About.defaultProps = {

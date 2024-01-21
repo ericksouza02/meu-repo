@@ -1,16 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import {FaIdCard, FaHome, FaScroll} from 'react-icons/fa'
-import Hero from "../molecules/Hero"
+import HeroImage from '../assets/car-img.jpg';
+import About from '../draws/about.svg'
+
+import {useScrollToTop} from '../hooks/scroll';
+
+import Hero from "../molecules/Hero";
 import Heading from "../atoms/Heading";
 import GridRoot from '../atoms/GridRoot';
 import Button from '../atoms/Button';
 import Footer from "../organisms/Footer";
 import Section from '../molecules/Section';
 import Callout, {CalloutMedia,CalloutBody,CalloutActions} from '../atoms/Callout'
-import HeroImage from '../assets/car-img.jpg';
-import About from '../draws/about.svg'
-import styled from "styled-components";
+import BreadCrumb from '../atoms/BreadCrumbge';
+
 const Image = styled.img`
     width: 100%;
        height: 100%;
@@ -38,12 +43,22 @@ const PinnedItem = styled.li`
 
     }
     `
-const ProductDetail = () => (
-    <>
+const ProductDetail = () => {
+    useScrollToTop();
+
+   return(
+   <>
         <Hero image={HeroImage}>
             <Heading>
                 <h1>Nome do Serviço</h1>
             </Heading>
+            <BreadCrumb 
+                items={[
+                    {label: "Início", link:"/"},
+                    {label: "Serviços", },
+                    {label: "Nome do Serviço"}
+                    ]}
+            />
         </Hero>
         <Section>
             <p>
@@ -93,7 +108,8 @@ const ProductDetail = () => (
 
         </Section>
     </>
-)
+   )
+};
 
 ProductDetail.defaultProps = {}
 
