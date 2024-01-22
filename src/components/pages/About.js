@@ -1,15 +1,14 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import AvatarImage from '../assets/car-img.jpg';
-import {useScrollToTop} from '../hooks/scroll'
+import AvatarImage from '../../assets/car-img.jpg'; 
+import CarImage from '../../assets/car-img.jpg';
+import AboutImage from '../../draws/about.svg';
 
 import Hero from "../molecules/Hero"
 import Heading from "../atoms/Heading";
 import GridRoot from '../atoms/GridRoot';
 import styled from "styled-components";
-import CarImage from '../assets/car-img.jpg'
 import Section from '../molecules/Section'
-import AboutImage from '../draws/about.svg';
 import Footer from '../organisms/Footer';
 import BreadCrumb from '../atoms/BreadCrumbge';
 import Card,{CardMedia, CardMediaDescription} from '../atoms/Card'
@@ -29,11 +28,8 @@ const instructors = [
     { id: 4, name: 'Spider Man', avatar: AvatarImage},
 ]
 
-const About = () => {
-    
-   useScrollToTop();
+const About = () => (
 
-    return(
     <>
         <Hero image={CarImage}>
             <Heading><h1>Auto Escola Nardini</h1></Heading>
@@ -99,16 +95,6 @@ const About = () => {
         </Section>
         <Footer />
     </>
-    )
-}
-
-
-About.defaultProps = {
-
-}
-
-About.propTypes = {
-
-}
+);
 
 export default About;

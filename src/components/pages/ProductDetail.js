@@ -2,10 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import {FaIdCard, FaHome, FaScroll} from 'react-icons/fa'
-import HeroImage from '../assets/car-img.jpg';
-import About from '../draws/about.svg'
-
-import {useScrollToTop} from '../hooks/scroll';
+import HeroImage from '../../assets/car-img.jpg';
+import About from '../../draws/about.svg'
 
 import Hero from "../molecules/Hero";
 import Heading from "../atoms/Heading";
@@ -44,8 +42,7 @@ const PinnedItem = styled.li`
     }
     `
 const ProductDetail = () => {
-    useScrollToTop();
-
+    
    return(
    <>
         <Hero image={HeroImage}>

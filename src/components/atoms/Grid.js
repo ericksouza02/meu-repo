@@ -2,7 +2,7 @@ import React from "react";
 
 import PropTypes from "prop-types";
 import styled, {css} from "styled-components";
-import {breakAt, BreakPointSizes} from '../styles/BreakPointSize'
+import {breakAt, BreakPointSizes} from '../../styles/BreakPointSize'
 const getPrimaryColor = ({theme}) => theme.colors.primary.main;
 
 const Root = styled.div`

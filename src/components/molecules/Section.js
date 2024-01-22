@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"
 import Container from '../atoms/Container'
 import styled,{css} from "styled-components";
-import { breakAt,BreakPointSizes } from "../styles/BreakPointSize";
+import { breakAt,BreakPointSizes } from "../../styles/BreakPointSize";
 
 const Content = styled.div`
     padding: 40px 0;

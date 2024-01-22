@@ -1,11 +1,10 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import styled from "styled-components";
+
 import ThemeProvider from './styles/ThemeProvider';
 import GlobalStyle from './styles/GlobalStyle';
-import About from './pages/About';
-import Home from "./pages/Home";
-import Product from './pages/ProductDetail';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ProductDetail from "./pages/ProductDetail";
+import Routes from "./routes";
 
 const Root = styled.div`
   color: #fff;
@@ -17,12 +16,7 @@ function App() {
       <ThemeProvider>
         <GlobalStyle />
         <Router>
-          <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/sobre" element={<About />}/>
-            <Route path="/serviços" element={<ProductDetail/>}/>
-          </Routes>
-          <Home/>
+          <Routes/>
         </Router>
       </ThemeProvider>
     </Root>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
-import {breakAt, BreakPointSizes} from '../styles/BreakPointSize'
+import {breakAt, BreakPointSizes} from '../../styles/BreakPointSize';
 //#region CalloutBody
 const StyledCalloutBody = styled.div`
     h6, p{

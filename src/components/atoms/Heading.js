@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {breakAt, BreakPointSizes} from '../styles/BreakPointSize';
-import ThemeProvider from "../styles/ThemeProvider";
+import {breakAt, BreakPointSizes} from '../../styles/BreakPointSize';
+import ThemeProvider from "../../styles/ThemeProvider";
 
 const Heading = styled.h1
 `

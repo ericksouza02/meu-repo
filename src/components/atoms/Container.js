@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types"
 import styled from "styled-components";
-import {breakAt, BreakPointSizes} from '../styles/BreakPointSize';
+import {breakAt, BreakPointSizes} from '../../styles/BreakPointSize';
 const Container = styled.div`
     padding-left: 16px;
     max-width: 100%;

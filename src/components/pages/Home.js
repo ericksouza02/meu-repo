@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from 'react-icons/fa';
+import CardImage from '../../assets/car-img.jpg';
+import AboutImage from '../../assets/car-img.jpg'
+
 import Hero from '../molecules/Hero'
 import Heading from '../atoms/Heading';
 import Button from '../atoms/Button';
@@ -8,9 +12,6 @@ import Grid from '../atoms/Grid';
 import Section from "../molecules/Section";
 import Accordion from "../atoms/Accordion";
 import Footer from '../organisms/Footer';
-import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from 'react-icons/fa';
-import CardImage from '../assets/car-img.jpg';
-import AboutImage from '../assets/car-img.jpg'
 import ProductGrid from "../organisms/ProductGrid";
 import AccordionGroup from "../atoms/AccordionGroup";
 
