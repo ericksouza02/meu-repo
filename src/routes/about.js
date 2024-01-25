@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
-import {useScrollToTop} from '../../hooks/scroll'; 
+import {useScrollToTop} from '../hooks/scroll'; 
 
 import AboutPage from '../components/pages/About';
 

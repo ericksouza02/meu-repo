@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { FaCar, FaKey, FaMapMarkedAlt, FaAccessibleIcon } from 'react-icons/fa';
 import CardImage from '../../assets/car-img.jpg';
 import AboutImage from '../../assets/car-img.jpg'
+import PropTypes from "prop-types";
+
+import ProductType from "../../types/ProductType";
 
 import Hero from '../molecules/Hero'
 import Heading from '../atoms/Heading';
@@ -15,15 +18,9 @@ import Footer from '../organisms/Footer';
 import ProductGrid from "../organisms/ProductGrid";
 import AccordionGroup from "../atoms/AccordionGroup";
 
-const products = [
-    {id: 1, title: "1 Habilitação Carro e Moto", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
-    {id: 2, title: "1 Habilitação Carro", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
-    {id: 3, title: "1 Habilitação Moto", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
-    {id: 4, title: "Mudança de Categoria Caminhão", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
-    {id: 5, title: "Aulas Avulsas", summary: "lorem ipsum dolor sit met consectur adipiscing elit", image: CardImage},
-]
 
-const Home = () => (
+
+const Home = ({products}) => (
  <>
     <Hero image={CardImage}>
         <Heading>
@@ -108,8 +105,12 @@ const Home = () => (
  </>
 );
 
-Home.defaultProps = {}
+Home.defaultProps = {
+    products: []
+}
 
-Home.propTypes = {}
+Home.propTypes = {
+    products: PropTypes.arrayOf(ProductType)    
+}
 
 export default Home;
