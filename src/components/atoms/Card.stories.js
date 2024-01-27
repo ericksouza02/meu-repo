@@ -1,12 +1,12 @@
 import React from "react";
 import Card,{CardBody, CardMedia, CardMediaDescription} from "./Card";
 import Section from '../molecules/Section';
-import CardImage from '../assets/car-img.jpg';
-import CardPlaceHolder from '../assets/card-placeholder.jpg'
+import CardImage from '../../assets/car-img.jpg';
+import CardPlaceHolder from '../../assets/card-placeholder.jpg';
 
 import Button from './Button';
 import Heading from "./Heading";
-import ThemeProvider from "../styles/ThemeProvider";
+
 export default {
     title:"Components/Atoms/Card",
     component: Card, 

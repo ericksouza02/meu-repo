@@ -1,8 +1,8 @@
 import React from "react";
 
 import Callout, {CalloutBody, CalloutActions, CalloutMedia} from "./Callout";
-import Button from '../atoms/Button'
-import About from '../draws/about.svg'
+import Button from '../atoms/Button';
+import About from '../../draws/about.svg';
 import styled from "styled-components";
 
 export default {

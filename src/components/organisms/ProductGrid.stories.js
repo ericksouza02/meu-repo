@@ -1,7 +1,7 @@
 import React from "react";
 import ProductGrid from "./ProductGrid";
-import CardImage from '../assets/car-img.jpg';
-import ThemeProvider from "../styles/ThemeProvider";
+import CardImage from '../../assets/car-img.jpg';
+
 export default {
     title:"Components/Organisms/ProductGrid",
     component: ProductGrid

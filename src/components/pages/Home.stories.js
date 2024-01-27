@@ -1,4 +1,7 @@
 import React from "react";
+
+import {buildProductList} from "../../stories/builders/products";
+
 import Home from "./Home";
 
 export default {
@@ -6,6 +9,8 @@ export default {
     component: Home
 }
 
+const products = buildProductList(4);
+
 export const Usage = () => (
-        <Home />
-)
+        <Home products={products}/>
+);

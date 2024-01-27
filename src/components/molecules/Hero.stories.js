@@ -1,9 +1,8 @@
 import Hero from "./Hero";
 
-import Heading from "../atoms/Heading";
 import Button from '../atoms/Button'
-import CardImage from '../assets/card-image-story.jpg';
-import ThemeProvider from "../styles/ThemeProvider";
+import CardImage from '../../assets/card-image-story.jpg';
+
 export default {
     title: 'Components/Organisms/Hero',
     component: Hero

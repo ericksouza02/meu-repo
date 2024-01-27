@@ -25,7 +25,7 @@ const ProductGrid = ({products}) => {
     return(
     <>
 
-        <GridRoot md={3}>
+        <GridRoot md={2}>
             {filteredProducts.map((product)=> (
                 <div key={product.id}>
                 <Card>
@@ -35,7 +35,7 @@ const ProductGrid = ({products}) => {
                             <h6>{product.title}</h6>
                         </Heading>
                         <p>{product.summary}</p>
-                        <Button color='primary' variant='link' as={Link} to={`/serviços/${product.  }`}>
+                        <Button color='primary' variant='link' as={Link} to={`/serviços/${product.slang}`}>
                             Saiba Mais
                         </Button>
                     </CardBody>

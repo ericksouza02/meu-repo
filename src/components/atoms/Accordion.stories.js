@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import AccordionGroup from "./AccordionGroup";
-import ThemeProvider from "../styles/ThemeProvider";
+import ThemeProvider from "../../styles/ThemeProvider";
 export default {
     title:"Components/Atoms/Accordion",
     component: Accordion
