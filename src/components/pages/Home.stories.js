@@ -1,6 +1,5 @@
 import React from "react";
-
-import {buildProductList} from "../../stories/builders/products";
+import { buildProductList } from "../../models/builders/products";
 
 import Home from "./Home";
 
@@ -9,7 +8,7 @@ export default {
     component: Home
 }
 
-const products = buildProductList(4);
+const products = buildProductList(8);
 
 export const Usage = () => (
         <Home products={products}/>

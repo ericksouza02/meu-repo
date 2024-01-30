@@ -5,7 +5,7 @@ import CardImage from '../../assets/car-img.jpg';
 import AboutImage from '../../assets/car-img.jpg'
 import PropTypes from "prop-types";
 
-import ProductType from "../../types/ProductType";
+import ProductType from "../../models/types/ProductType";
 
 import Hero from '../molecules/Hero'
 import Heading from '../atoms/Heading';

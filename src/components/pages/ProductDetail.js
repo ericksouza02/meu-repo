@@ -4,7 +4,7 @@ import {FaIdCard, FaHome, FaScroll} from 'react-icons/fa';
 import HeroImage from '../../assets/car-img.jpg';
 import About from '../../draws/about.svg';
 
-import ProductType from '../../types/ProductType';
+import ProductType from '../../models/types/ProductType';
 
 import Hero from "../molecules/Hero";
 import Heading from "../atoms/Heading";

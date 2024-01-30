@@ -20,6 +20,13 @@
     "styled-components": "^6.0.8",
     "web-vitals": "^2.1.4"
   },
+  "browser": {
+    "colors": false,
+    "events": "eventemitter3",
+    "checkForModuleDuplicates": false,
+    "url": "./shims/url",
+    "tracer": false
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -85,6 +92,8 @@
     "@testing-library/jest-dom": "^6.1.5",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-storybook": "^0.6.15",
+    "Faker": "^0.7.2",
+    "json-loader": "^0.5.7",
     "prop-types": "^15.8.1",
     "webpack": "^5.88.2"
   },

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import ProductType from "../../types/ProductType";
+import ProductType from "../../models/types/ProductType";
 
 import Button from '../atoms/Button';
 import Heading from "../atoms/Heading";
