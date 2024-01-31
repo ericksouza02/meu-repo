@@ -10,6 +10,7 @@ const Heading = styled.h1
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  
 
     &::after {
         content: "";
