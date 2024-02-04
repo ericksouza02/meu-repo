@@ -1,7 +1,7 @@
 import React from "react";
 import {screen,fireEvent } from '@testing-library/react';
 import { render } from "@testing-library/react";
-import ThemeProvider from "../styles/ThemeProvider";
+import ThemeProvider from '../../styles/ThemeProvider';
 import '@testing-library/jest-dom';
 import Button from "./Button"
 
